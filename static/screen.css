@@ -1,0 +1,263 @@
+html {
+   padding: 0;
+   margin: 0;
+   background-color: #ffffff;
+   font-family: Verdana, Helvetica, sans-serif;
+}
+body {  
+   padding: 0;
+   margin: 10px 10% 0px 10%;
+   margin: 10px 10vw 0px 10vw;
+   text-rednering: geometricPrecision;
+}
+
+h1 {
+    font-family: 'Gill Sans Light', 'Gill Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 6em;
+    font-size: 8vw;
+    font-weight: normal;
+    margin-bottom: 1%;
+    margin-top: 0px;
+}
+
+h3 {
+    color: #333;
+    font-family: 'Gill Sans Light', 'Gill Sans', 'Helvetica Neue', Arial, sans-serif;    
+    font-size: 3em;
+    font-size: 3vw;
+    font-weight: normal;    
+    margin: 0.2em 0px;
+    margin: 0.2vh 0px;        
+}
+
+h4 {
+    color: #333;
+    font-family: 'Gill Sans Light', 'Gill Sans', 'Helvetica Neue', Arial, sans-serif;    
+    font-size: 1.2em;
+    margin: 0.2em 0px;
+    margin: 0.2vh 0px;        
+}
+
+.urlBox {
+  padding: 10% 5px 0 5px;
+  font-size: 2em;  
+  font-size: 4vw;
+  height: 1.8em;
+  text-align: center;
+  display: flex;  
+  justify-content: center;
+  letter-spacing: -0.02em;
+  font-weight: bold;
+  color: #333;  
+  transition: all 1s;
+}
+
+.feedback {
+  padding: 3% 5px 0 5px;
+  font-size: 1.0em;  
+  font-size: 2.5vw;
+  
+  text-align: left;
+  display: flex;  
+  flex-direction: column;
+  justify-content: center;
+  letter-spacing: -0.02em;
+  font-weight: bold;
+  color: #333;   
+}
+
+.prefix {
+  text-align: bottom;
+  padding-top: 0.2em;
+}
+
+.feedback > textarea {
+   outline: none;
+   border: none;
+   font-size: 1.0em;
+   font-size: 2.5vw;   
+   height: 25vh;
+   font-family: 'Gill Sans Light', 'Gill Sans', 'Helvetica Neue', Arial, sans-serif;    
+}
+
+.urlBox > input[type=text]{      
+   outline: none;
+   border: none;
+   font-size: 1em;
+   font-size: 4vw;
+   padding-bottom: 0.1em;
+   flex: 9;
+   bottom: 0.4em;
+}
+
+.submitButton {    
+    height: 4em;    
+    background: #333;
+    color: #FFF;
+    border: none;    
+    flex: 1;
+    cursor: pointer;
+    margin-top: 0.4em;
+    font-size: 0.3em;
+    font-weight: bolder;
+    letter-spacing: 0.2em;
+}
+
+.fl {
+  border-bottom: 2px red dotted;
+  cursor: pointer;
+}
+
+#flair {
+   margin-top: 0.75em;
+
+}
+
+.submitFeedbackButton {    
+    height: 4em;
+    background: #FFF;
+    border: none;    
+    flex: 6;
+    cursor: pointer;
+    margin-top: 0.4em;
+    font-size: 1.0em;  
+    font-size: 2.5vw;
+    
+    text-align: right;
+    letter-spacing: -0.02em;
+    font-weight: bold;
+    color: #333;   
+}
+
+input[type=submit]:disabled,
+button:disabled{  
+  color: #FFF;
+  background-color: #FFF;
+  cursor: default;
+  transition: all 0.75s;
+
+}
+
+#nav {
+  border-top: 1px solid #333;
+  border-bottom: 5px double #333;
+  font-size: 1em;    
+  text-align: center;
+  margin: 3% 0%;
+  display: flex;
+  justify-content: center;
+  letter-spacing: 0.2em;  
+}
+
+#nav ul {
+   list-style: none;
+   flex: 3.33;
+}
+
+#nav li {
+   display: inline;   
+   padding: 0px 2em;   
+}
+
+#nav li a, #nav li a:visited {
+   text-decoration: none;
+   color: #333;
+}
+
+#nav li a:hover, footer a:hover {
+   text-decoration: underline;
+   cursor: pointer;   
+}
+
+footer a, footer a:visited  {
+ color: #FFF; 
+}
+
+.priv {
+  float: right;
+}
+
+#content {
+   width: 100%;   
+}
+
+.faq li {
+  margin: 1em;
+
+}
+
+.error, .msg {    
+  font-variant: small-caps;
+  font-size: 1.5em;
+  font-size: 2vw;
+
+  letter-spacing: 0.1em;
+  text-align: center;       
+  animation: fadein 2s;
+  -moz-animation: fadein 2s; /* Firefox */
+  -webkit-animation: fadein 2s; /* Safari and Chrome */
+  -o-animation: fadein 2s; /* Opera */ 
+  transition: all 1.2s;
+}
+
+.error {
+  color: #FF0000;
+}
+
+.textContent {
+  animation: fadein 1s;
+  -moz-animation: fadein 1s; /* Firefox */
+  -webkit-animation: fadein 1s; /* Safari and Chrome */
+  -o-animation: fadein 1s; /* Opera */   
+}
+
+footer {
+   width: 80%;
+   width: 80vw;
+   background-color: #333;
+   color: #FFF;
+   font-size: 0.8em;
+   position: fixed;
+   padding: 0.2em 1em;
+   bottom: 0px;
+}
+
+#scrapeForm {
+  animation: fadein 1s;
+  -moz-animation: fadein 1s; /* Firefox */
+  -webkit-animation: fadein 1s; /* Safari and Chrome */
+  -o-animation: fadein 1s; /* Opera */
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
