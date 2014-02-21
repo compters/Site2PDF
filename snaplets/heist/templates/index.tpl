@@ -14,11 +14,11 @@
   </script>
   <form id="scrapeForm" action="/pdf/scrape/" method="POST">
     <div class="urlBox">
-      <span class="prefix">
-        http://
-      </span>
-      <input type="text" name="url" placeholder="www.bbc.co.uk"/>
-      <button type="submit" class="submitButton">PDF</button>
+      <div class="inputWrapper">
+        <label for="url">http://</label>
+        <input type="text" name="url" id="url" placeholder="www.bbc.co.uk"/>
+        <button type="submit" class="submitButton">PDF</button>
+      </div>
     </div>
   </form>
   <error>

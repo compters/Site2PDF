@@ -8,7 +8,7 @@ body {
    padding: 0;
    margin: 10px 10% 0px 10%;
    margin: 10px 10vw 0px 10vw;
-   text-rednering: geometricPrecision;
+   text-rendering: geometricPrecision;
 }
 
 h1 {
@@ -41,11 +41,11 @@ h4 {
 .urlBox {
   padding: 10% 5px 0 5px;
   font-size: 2em;  
-  font-size: 4vw;
+  /*font-size: 4vw;*/
   height: 1.8em;
   text-align: center;
-  display: flex;  
-  justify-content: center;
+  /*display: flex;  */
+  /*justify-content: center;*/
   letter-spacing: -0.02em;
   font-weight: bold;
   color: #333;  
@@ -68,7 +68,7 @@ h4 {
 
 .prefix {
   text-align: bottom;
-  padding-top: 0.2em;
+  flex: 2;
 }
 
 .feedback > textarea {
@@ -80,28 +80,40 @@ h4 {
    font-family: 'Gill Sans Light', 'Gill Sans', 'Helvetica Neue', Arial, sans-serif;    
 }
 
-.urlBox > input[type=text]{      
+.inputWrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.inputWrapper > input[type=text]{      
    outline: none;
    border: none;
    font-size: 1em;
-   font-size: 4vw;
-   padding-bottom: 0.1em;
-   flex: 9;
+   /*font-size: 4vw;*/
+   /*padding-bottom: 0.1em;*/
+   padding: 0;
    bottom: 0.4em;
+   flex: 5;
 }
 
 .submitButton {    
+    display: block;
     height: 4em;    
     background: #333;
     color: #FFF;
     border: none;    
-    flex: 1;
+    
     cursor: pointer;
     margin-top: 0.4em;
     font-size: 0.3em;
     font-weight: bolder;
     letter-spacing: 0.2em;
+    width: 100%;
+    text-align: center;
+    -ms-text-justify: inter-cluster;
+    text-justify: inter-cluster;
 }
+
 
 .fl {
   border-bottom: 2px red dotted;
@@ -117,7 +129,7 @@ h4 {
     height: 4em;
     background: #FFF;
     border: none;    
-    flex: 6;
+    display: block;
     cursor: pointer;
     margin-top: 0.4em;
     font-size: 1.0em;  
@@ -143,20 +155,34 @@ button:disabled{
   border-bottom: 5px double #333;
   font-size: 1em;    
   text-align: center;
+  padding: 0;
   margin: 3% 0%;
-  display: flex;
+  /*display: flex;*/
   justify-content: center;
   letter-spacing: 0.2em;  
 }
 
 #nav ul {
    list-style: none;
-   flex: 3.33;
+   padding: 0;
+  
+   /*flex: 3.33;*/
 }
 
 #nav li {
-   display: inline;   
-   padding: 0px 2em;   
+   display: block;   
+   margin: 0;
+   padding: 1em 2em;   
+}
+
+@media all and (min-width: 570px) {
+  #nav li {
+    display: inline;
+    padding: 1em 2em;
+  }  
+  .submitButton {
+    flex: 1;
+  }
 }
 
 #nav li a, #nav li a:visited {
