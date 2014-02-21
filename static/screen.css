@@ -11,6 +11,12 @@ body {
    text-rendering: geometricPrecision;
 }
 
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 h1 {
     font-family: 'Gill Sans Light', 'Gill Sans', 'Helvetica Neue', Arial, sans-serif;
     font-size: 6em;
@@ -141,7 +147,7 @@ h4 {
     color: #333;   
 }
 
-input[type=submit]:disabled,
+input[type=submit]:disabled,  
 button:disabled{  
   color: #FFF;
   background-color: #FFF;
@@ -165,7 +171,7 @@ button:disabled{
 #nav ul {
    list-style: none;
    padding: 0;
-  
+
    /*flex: 3.33;*/
 }
 
@@ -184,6 +190,12 @@ button:disabled{
     flex: 1;
   }
 }
+@media all and (max-height: 400px) {
+  footer {
+    display: none;
+  }
+}
+
 
 #nav li a, #nav li a:visited {
    text-decoration: none;
