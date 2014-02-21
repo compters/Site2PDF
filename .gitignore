@@ -6,3 +6,5 @@ site_key.txt
 users.json
 infra
 feedback.txt
+.cabal-sandbox
+cabal.sandbox.config
